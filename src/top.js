@@ -16,7 +16,7 @@ function loadTop() {
 
     var aboutIntro = document.createElement('p');
     aboutIntro.id = 'aboutIntro'
-    aboutIntro.innerHTML = "From our earliest days, as species and as individuals, we have loved food in the square form.<br><br> Cheese. Tofu. Bouillion cubes. Bubblicious Gum. <br><br> Now Chef Q-Bert launched a new restaurant on this theme, in Jackson Hole, Wyoming. <br><br> Come to -- where else but -- the nation's squarest state for the squarest meal you've ever had."
+    aboutIntro.innerHTML = "From our earliest days, as species and as individuals, we have loved food in the square form.<br><br> Cheese. Tofu. Bouillion cubes. Bubblicious Gum. <br><br> Now Chef Q-Bert launched a new restaurant on this theme, in Jackson Hole, Wyoming. <br><br> Come to -- where else -- but the nation's squarest state for the squarest meal you've ever had."
     document.getElementById('aboutTab').appendChild(aboutIntro);
     };
 

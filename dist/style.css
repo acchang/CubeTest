@@ -164,3 +164,24 @@ input {
   width: 500px;
   height: 150px;
   }
+
+
+  .menu {
+    display: grid;
+    margin: 2px;
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: center; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+    /* animation: fadeIn 1.5s; */
+  }
+
+  .menu-item {
+    width: 110px;
+    height: 110px;
+    background-color: beige;
+    color: black;
+    margin: 2px;
+    padding: 2px;
+  }
