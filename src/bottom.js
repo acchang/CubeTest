@@ -5,7 +5,7 @@ function loadBottom() {
     document.getElementById('cube').appendChild(bottomTab);
     
     var bottomItem = document.createElement('h1');
-    bottomItem.innerHTML = 'bottom';
+    bottomItem.innerHTML = 'MENU';
     document.getElementById('bottomTab').appendChild(bottomItem);
     };
 

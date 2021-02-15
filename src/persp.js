@@ -3,28 +3,28 @@ function chiefDiv() {
     persp.classList.add('perspective');
     persp.id = 'perspective';
     document.getElementById('content').appendChild(persp);
-    
+
     var topLabel = document.createElement('label');
-    topLabel.innerHTML = 'TOP';
-    topLabel.classList.add('tab');
+    topLabel.innerHTML = 'ABOUT';
+    topLabel.classList.add('tab', 'monofett');
     topLabel.htmlFor = 'tab-top';
     document.getElementById('perspective').appendChild(topLabel);
 
     var frontLabel = document.createElement('label');
-    frontLabel.innerHTML = 'FRONT';
-    frontLabel.classList.add('tab');
+    frontLabel.innerHTML = 'HOME';
+    frontLabel.classList.add('tab', 'monofett');
     frontLabel.htmlFor = 'tab-front';
     document.getElementById('perspective').appendChild(frontLabel);
 
     var bottomLabel = document.createElement('label');
-    bottomLabel.innerHTML = 'BOTTOM';
-    bottomLabel.classList.add('tab');
+    bottomLabel.innerHTML = 'MENU';
+    bottomLabel.classList.add('tab', 'monofett');
     bottomLabel.htmlFor = 'tab-bottom';
     document.getElementById('perspective').appendChild(bottomLabel);
 
     var oppoLabel = document.createElement('label');
-    oppoLabel.innerHTML = 'OPPO';
-    oppoLabel.classList.add('tab');
+    oppoLabel.innerHTML = 'VISIT';
+    oppoLabel.classList.add('tab', 'monofett');
     oppoLabel.htmlFor = 'tab-oppo';
     document.getElementById('perspective').appendChild(oppoLabel);
     
