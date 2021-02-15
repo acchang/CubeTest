@@ -10,7 +10,7 @@ function loadTop() {
     document.getElementById('aboutTab').appendChild(aboutHero);
 
     var aboutHead = document.createElement('h1');
-    aboutHead.innerHTML = 'about';
+    aboutHead.innerHTML = 'ABOUT';
     aboutHead.id = 'aboutHead'
     document.getElementById('aboutHero').appendChild(aboutHead)
 

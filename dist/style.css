@@ -8,7 +8,7 @@ url("images/manycubes.jpg"); */
   perspective-origin: 50% 50px;
   width: 860px;
   margin: 0 auto;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-weight: 100;
   color: #fff;
   text-align: center;
@@ -167,21 +167,33 @@ input {
 
 
   .menu {
-    display: grid;
-    margin: 2px;
-    /* flex-direction: row;
+    display: flex;
+    padding: 10px 5px 5px;
+    flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     flex-flow: center; */
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1px;
-    /* animation: fadeIn 1.5s; */
   }
 
   .menu-item {
-    width: 110px;
-    height: 110px;
+    width: 105px;
+    height: 105px;
     background-color: beige;
     color: black;
     margin: 2px;
     padding: 2px;
   }
+
+  .foodName {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+  };
+
+  .foodPic {
+    font-size: 25px;
+  };
+
+  .foodDescription {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 10px;
+  };

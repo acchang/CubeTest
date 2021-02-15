@@ -4,94 +4,97 @@ function createMenu() {
     
     menu.appendChild(
         createMenuItem(
-        "Beef 🥩",
+        "Beef", "🥩",
         "Free-Range, Corn-Fed"
         )
     );
     menu.appendChild(
         createMenuItem(
-        "Chicken 🐓",
+        "Chicken","🐓",
         "Vegetarian Fed"
         )
     );
     menu.appendChild(
         createMenuItem(
-        "Pork 🐖",
+        "Pork","🐖",
         "Heritage Breed"
         )
     );
     menu.appendChild(
         createMenuItem(
-        "Cheese 🧀",
+        "Cheese","🧀",
         "Aged 3 years"
         )
     );
     menu.appendChild(
         createMenuItem(
-        "Onion 🧅",
+        "Onion","🧅",
         "Red, Yellow"
         )
     );
     menu.appendChild(
         createMenuItem(
-        "Yam 🍠",
+        "Yam","🍠",
         "Slow-roasted"
         )
     );
     menu.appendChild(
         createMenuItem(
-        "Eggplant 🍆",
-        "Heirloom Variety"
+        "Eggplant","🍆",
+        "Heirloom variety"
         )
     );
     menu.appendChild(
         createMenuItem(
-        "Potato 🥔",
+        "Potato","🥔",
         "Idaho-grown"
         )
+    );
     menu.appendChild(
         createMenuItem(
-        "Mushroom 🍄",
+        "Mushroom","🍄",
         "Artisanal fungi"
         )
     );
     menu.appendChild(
         createMenuItem(
-        "Tuna 🐟",
+        "Tuna","🐟",
         "Line-caught"
         )
     );
     menu.appendChild(
         createMenuItem(
-        "Avocado 🥑",
+        "Avocado","🥑",
         "Sustainably sourced"
         )
     );
     menu.appendChild(
         createMenuItem(
-        "Pineapple 🍍",
+        "Pineapple","🍍",
         "Daily Special"
         )
     );
     return menu;
     }
 
-function createMenuItem(name, description) {
+function createMenuItem(name, pic, description) {
     const menuItem = document.createElement("div");
     menuItem.classList.add("menu-item");
 
-    const foodName = document.createElement("h5");
+    const foodName = document.createElement("div");
+    foodName.classList.add('foodName');
     foodName.textContent = name;
 
-    const foodDescription = document.createElement("h9");
+    const foodPic = document.createElement("div");
+    foodPic.classList.add('foodPic');
+    foodPic.textContent = pic;
+
+    const foodDescription = document.createElement("div");
+    foodDescription.classList.add('foodDescription');
     foodDescription.textContent = description;
 
-    // const foodImage = document.createElement("img");
-    // foodImage.src = `images/menu/${name.toLowerCase()}.png`;
-    // foodImage.alt = `${name}`;
-
-    // menuItem.appendChild(foodImage);
     menuItem.appendChild(foodName);
+    menuItem.appendChild(foodPic);
     menuItem.appendChild(foodDescription)
 
 return menuItem;
