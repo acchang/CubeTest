@@ -6,7 +6,7 @@ url("images/manycubes.jpg"); */
 .perspective {
   perspective: 76em;
   perspective-origin: 50% 50px;
-  width: 830px;
+  width: 860px;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -20,8 +20,8 @@ input {
 
 .tab {
   position: absolute;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   background: pink;
   right: 0;
   line-height: 70px;
@@ -32,19 +32,19 @@ input {
 }
 
 .tab:nth-child(1) {
-  top: 100px;
-  background: #06D6A0;
+  top: 90px;
+  background: #23a844;
 }
 .tab:nth-child(2) {
   top: 200px;
-  background: #1B9AAA;
+  background: #63045e;
 }
 .tab:nth-child(3) {
-  top: 300px;
-  background: #EF476F;
+  top: 310px;
+  background: #d61313;
 }
 .tab:nth-child(4) {
-  top: 400px;
+  top: 420px;
   background: gray;
 }
 
@@ -62,28 +62,34 @@ input {
   width: 500px;
   height: 500px;
   position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
 }
 .tab-content h1 {
-  font-size: 25px;
-  margin: 75px 0 10px;
+  font-size: 5em;
+  margin: 15px 0 15px;
   font-weight: 300;
+  font-family: 'Monofett', cursive;
 }
 .tab-content p {
-  font-size: 12px;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 20px;
 }
 .tab-content:nth-child(2) {
   transform: translateZ(250px);
-  background: #1B9AAA;
+  background: #63045e;
 }
 .tab-content:nth-child(1) {
   transform: rotateX(-270deg) translateY(-250px);
   transform-origin: top left;
-  background: #06D6A0;
+  background: #23a844;
 }
 .tab-content:nth-child(3) {
   transform: rotateX(-90deg) translateY(250px);
   transform-origin: bottom center;
-  background: #EF476F;
+  background: #d61313;
 }
 
 .tab-content:nth-child(4) {
@@ -92,17 +98,69 @@ input {
 }
 
 #tab-top:checked ~ .cube {
-  transform: rotateX(-90deg);
+  transform: rotateX(-93deg);
 }
 
 #tab-front:checked ~ .cube {
-  transform: rotateX(0deg);
+  transform: rotateX(-3deg);
 }
 
 #tab-bottom:checked ~ .cube {
-  transform: rotateX(90deg);
+  transform: rotateX(86deg);
 }
 
 #tab-oppo:checked ~ .cube {
-  transform: rotateX(180deg);
+  transform: rotateX(177deg);
 }
+
+
+
+
+
+#locationmap {
+  margin: 0px auto 10px;
+  border: 0px;
+  width: 500px;
+  height: 250px;
+  }
+  
+  .tab {
+  font-size: 2em;
+  }
+  
+  .header {
+  font-size: 5em;
+  }
+  
+  .monofett {
+  font-family: 'Monofett', cursive;
+  }
+  
+  #home-intro {
+  justify-content: center;
+  line-height: 32px;
+  }
+  
+  #contact-info {
+  justify-content: center;
+  line-height: 20px;
+  width: 500px;
+  height: 150px;
+  }
+  
+  #brownie {
+  filter: blur(1px); 
+  width: 100%; 
+  }
+  
+  .visithero {
+  background-image: url("images/choco-cubes.png");
+  width: 500px;
+  height: 150px;
+  }
+
+  .abouthero {
+  background-image: url("images/cubeapps.png");
+  width: 500px;
+  height: 150px;
+  }
