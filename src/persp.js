@@ -21,6 +21,12 @@ function chiefDiv() {
     bottomLabel.classList.add('tab');
     bottomLabel.htmlFor = 'tab-bottom';
     document.getElementById('perspective').appendChild(bottomLabel);
+
+    var oppoLabel = document.createElement('label');
+    oppoLabel.innerHTML = 'OPPO';
+    oppoLabel.classList.add('tab');
+    oppoLabel.htmlFor = 'tab-oppo';
+    document.getElementById('perspective').appendChild(oppoLabel);
     
     var topInput = document.createElement('input');
     topInput.type = 'radio'
@@ -39,6 +45,12 @@ function chiefDiv() {
     bottomInput.name = 'tabs'
     bottomInput.id = 'tab-bottom'
     document.getElementById('perspective').appendChild(bottomInput);
+
+    var oppoInput = document.createElement('input');
+    oppoInput.type = 'radio'
+    oppoInput.name = 'tabs'
+    oppoInput.id = 'tab-oppo'
+    document.getElementById('perspective').appendChild(oppoInput);
         
     var cubeDiv = document.createElement('div');
     cubeDiv.classList.add('cube');

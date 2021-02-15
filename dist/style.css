@@ -1,12 +1,12 @@
 body {
-  background: #F8FFE5;
-  /* url("images/manycubes.jpg"); */
+  background:
+url("images/manycubes.jpg"); */
 }
 
 .perspective {
   perspective: 76em;
   perspective-origin: 50% 50px;
-  width: 600px;
+  width: 830px;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -19,47 +19,48 @@ input {
 }
 
 .tab {
-  position: relative;
-  right: 0;
-  line-height: 70px;
-  font-weight: 300;
+  position: absolute;
+  width: 90px;
+  height: 90px;
   background: pink;
   right: 0;
   line-height: 70px;
   font-weight: 300;
-  width: 110px;
-  height: 110px;
+  right: 0;
+  line-height: 70px;
+  font-weight: 300;
 }
+
 .tab:nth-child(1) {
-  top: -5px;
+  top: 100px;
   background: #06D6A0;
 }
 .tab:nth-child(2) {
-  top: -5px;
+  top: 200px;
   background: #1B9AAA;
 }
 .tab:nth-child(3) {
-  top: -5px;
+  top: 300px;
   background: #EF476F;
 }
 .tab:nth-child(4) {
-  top: -5px;
+  top: 400px;
   background: gray;
 }
 
 .cube {
   position: relative;
   margin: 60px auto 0;
-  width: 600px;
-  height: 600px;
-  transform-origin: 0 300px;
+  width: 500px;
+  height: 500px;
+  transform-origin: 0 250px;
   transform-style: preserve-3d;
   transition: transform 0.5s ease-in;
 }
 
 .tab-content {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   position: absolute;
 }
 .tab-content h1 {
@@ -71,22 +72,22 @@ input {
   font-size: 12px;
 }
 .tab-content:nth-child(2) {
-  transform: translateZ(300px);
+  transform: translateZ(250px);
   background: #1B9AAA;
 }
 .tab-content:nth-child(1) {
-  transform: rotateX(-270deg) translateY(-300px);
+  transform: rotateX(-270deg) translateY(-250px);
   transform-origin: top left;
   background: #06D6A0;
 }
 .tab-content:nth-child(3) {
-  transform: rotateX(-90deg) translateY(300px);
+  transform: rotateX(-90deg) translateY(250px);
   transform-origin: bottom center;
   background: #EF476F;
 }
 
 .tab-content:nth-child(4) {
-  transform: rotateX(180deg) translateZ(300px);
+  transform: rotateX(180deg) translateZ(250px);
   background: gray;
 }
 
