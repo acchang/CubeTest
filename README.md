@@ -1,5 +1,8 @@
 # CubeTest
 
+You can see the finished product here: https://acchang.github.io/CubeTest/
+
+
 This was an exercise from the Odin Project which involved taking HTML and rewriting it to Javascript Modules:
 https://www.theodinproject.com/courses/javascript/lessons/restaurant-page
 
